@@ -12,16 +12,10 @@ THE COMMAND is :gcc -c file-name.c
 
 4-Linker->the input is object code ,processed by Linker .linker will copy the definition of functions  and add it into the binary file /excutable file 
 the Command is:gcc -o binary-name objectfile 
-Now i will expalin compilation process more  in detail why we need in frensh :
 
 
-dans le systsème linux nous avons trois partie /usespace/kernel space /hw (hardware )
-la plus important partie dans hw (c'est le CPU contient les registres et des autres choses  )
--notre objectif c'est d'avoir des instructions travaille sur ce processeur 
-les choces qu'il faut connaitre :
-1/Architecture du processeur pour savoir comment on créer les instructions 
- (ARM,X86 ,MIPS ....etc )
-chaque architecture a ISA (instruction set Architecture )
+we need to know the architecture of the CPU (ARM ,X86 ,MIPS ....etc )
+every arctecture has ISA :
 An Instruction Set Architecture (ISA) is part of the abstract model of a computer. It defines how software controls the processor. 
 
 
