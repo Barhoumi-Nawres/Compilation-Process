@@ -1,2 +1,2 @@
 # Compilation-Process
-this repository how the compilation process work  
+this repository explain how the compilation process work  
