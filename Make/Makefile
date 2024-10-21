@@ -14,5 +14,4 @@ all: display
 
 clean:
 	@rm *.o
-	@echo "'date 'done" > log.txt
-
+	@echo "`date` done" > log.txt
