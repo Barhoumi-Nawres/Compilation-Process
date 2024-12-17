@@ -17,3 +17,4 @@ Compilation process in C involves four steps: pre-processing, compiling, assembl
 - [Linking](#Linking):
 
 ## Makefile:  
+the makefile is very useful for managing a large projects ,where several files must be compiled in a specific order with a specific  rules .
