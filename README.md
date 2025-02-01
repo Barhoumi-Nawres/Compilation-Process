@@ -11,22 +11,34 @@ Compilation process in C involves four steps: pre-processing, compiling, assembl
 - [Pre-processing](#Pre-processing):
 this is the first step that replace  the content of include library and rmove all comments .
 use the fllowing command:
-cpp main.c -o main.i (.i for c code and .ii for c++ code )
+
+```bash
+cpp main.c -o main.i
+```
+ (.i for c code and .ii for c++ code )
   
 - [Compiling](#Compiling):
   the command :
+```bash
   gcc -S main.i
+```
+
+
   (it will generate (.s file=assembly code  )
   
 - [Assembler](#Assembler):
-as main.s -o main.o
+```bash
+ as main.s -o main.o
+```
 
 (it will generate object file )
   
 - [Linking](#Linking):
  there are two types of linker static and dynamic :
-use the fllowing comand
+use the fllowing command:
+```bash
 gcc main.o -o main
+```
 (it will generate  executable code (machine code that can be understood by cpu )(ELF :Executable and linkable format )
 
 
