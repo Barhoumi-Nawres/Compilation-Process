@@ -9,12 +9,26 @@ a Compiler is a software program that translate high-level programming language 
 ## Process of compilation :
 Compilation process in C involves four steps: pre-processing, compiling, assembling, and linking.
 - [Pre-processing](#Pre-processing):
+this is the first step that replace  the content of include library and rmove all comments .
+use the fllowing command:
+cpp main.c -o main.i (.i for c code and .ii for c++ code )
   
 - [Compiling](#Compiling):
+  the command :
+  gcc -S main.i
+  (it will generate (.s file=assembly code  )
   
-- [Assembling](#Assembling):
+- [Assembler](#Assembler):
+as main.s -o main.o
+
+(it will generate object file )
   
 - [Linking](#Linking):
+ there are two types of linker static and dynamic :
+use the fllowing comand
+gcc main.o -o main
+(it will generate  executable code (machine code that can be understood by cpu )(ELF :Executable and linkable format )
+
 
 ## Makefile:  
 the makefile is very useful for managing a large projects ,where several files must be compiled in a specific order with a specific  rules .
