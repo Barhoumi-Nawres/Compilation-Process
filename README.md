@@ -9,24 +9,28 @@ a Compiler is a software program that translate high-level programming language 
 ## Process of compilation :
 Compilation process in C involves four steps: pre-processing, compiling, assembling, and linking.
 - [Pre-processing](#Pre-processing):
-this is the first step that replace  the content of include library and rmove all comments .
-use the fllowing command:
+This is the first step, where the compiler:
+
+  -Replaces the content of included libraries (#include).
+  -Removes all comments.
+Use the following command:
 
 ```bash
 cpp main.c -o main.i
 ```
- (.i for c code and .ii for c++ code )
+The generated file has the .i extension for C and .ii for C++.
   
 - [Compiling](#Compiling):
+  The following command compiles the preprocessed file into assembly code:
   the command :
 ```bash
   gcc -S main.i
 ```
 
-
-  (it will generate (.s file=assembly code  )
+📌 Output: A .s file containing assembly code.
   
-- [Assembler](#Assembler):
+- [Assembling](#Assembling):
+  The assembler converts the assembly code into an object file:
 ```bash
  as main.s -o main.o
 ```
@@ -34,13 +38,20 @@ cpp main.c -o main.i
 (it will generate object file )
   
 - [Linking](#Linking):
- there are two types of linker static and dynamic :
+The linker combines object files into an executable file. There are two types of linkers: static and dynamic.
 use the fllowing command:
 ```bash
 gcc main.o -o main
 ```
-(it will generate  executable code (machine code that can be understood by cpu )(ELF :Executable and linkable format )
+📌 Output:
+
+    An executable file containing machine code that the CPU can understand.
+    The executable follows the ELF (Executable and Linkable Format).
+
 
 
 ## Makefile:  
 the makefile is very useful for managing a large projects ,where several files must be compiled in a specific order with a specific  rules .
+it's automation  of the compilation process :
+Use the tool make  to execute the makefile (if the  name of makefile !=makefile so Use make -f name-of-makefile )
+
