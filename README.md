@@ -60,6 +60,9 @@ Assembler +linker +other tolls (understand ELF ) =BIn Utils
 BIN Utils +compiler +preprocesor =toolchain 
 tollchain+libraries use by linker =SDK (software developpemnt kit 
 
+<img src="presentation SDK.png" alt="Software development kit " />
+
+
 ## Makefile:  
 the makefile is very useful for managing a large projects ,where several files must be compiled in a specific order with a specific  rules .
 it's automation  of the compilation process :
