@@ -60,7 +60,7 @@ Assembler +linker +other tolls (understand ELF ) =BIn Utils
 BIN Utils +compiler +preprocesor =toolchain 
 tollchain+libraries use by linker =SDK (software developpemnt kit 
 
-<img src="presentation SDK.png" alt="Software development kit " />
+<img src="presentation SDK .png" alt="Software development kit " />
 
 
 ## Makefile:  
