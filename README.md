@@ -62,7 +62,7 @@ Assembler +linker +other tolls (understand ELF ) =BIn Utils
 BIN Utils +compiler +preprocesor =toolchain 
 tollchain+libraries use by linker =SDK (software developpemnt kit 
 
-<img src="presentation SDK .png" alt="Software development kit " />
+<img src="compilation.drawio.png" alt="Software development kit " />
 
 - [Loader](#Loader): It loads the executable code into memory; program and data stack are created, register gets initialized.
 ## Makefile:  
